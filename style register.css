@@ -1,0 +1,111 @@
+/* ===== F1 THEME GENERAL ===== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0c0c0c;
+  color: white;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* ===== AUTH PAGE ===== */
+.auth-body {
+  background: url('assets/bg-f1.jpg') no-repeat center center/cover;
+}
+
+.auth-section {
+  display: none;
+  position: absolute;
+  inset: 0;
+  justify-content: center;
+  align-items: center;
+  animation: fade 0.8s ease forwards;
+}
+
+.auth-section:target {
+  display: flex;
+}
+
+.auth-card {
+  background: rgba(20, 20, 20, 0.85);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 20px;
+  padding: 40px;
+  width: 320px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.3);
+  animation: slideUp 0.7s ease;
+}
+
+.auth-logo {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+.auth-card h2 {
+  color: #ff1e00;
+  margin-bottom: 20px;
+  font-size: 1.4em;
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.1);
+  color: white;
+  outline: none;
+  transition: 0.3s;
+}
+
+.auth-card input:focus {
+  background: rgba(255,255,255,0.2);
+}
+
+.btn-auth {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #ff1e00, #ff4d00);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-auth:hover {
+  background: linear-gradient(90deg, #ff4d00, #ff1e00);
+  transform: scale(1.03);
+}
+
+.auth-link {
+  margin-top: 10px;
+  color: #aaa;
+  font-size: 0.9em;
+}
+
+.auth-link a {
+  color: #ff1e00;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.auth-link a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fade {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes slideUp {
+  from {transform: translateY(25px); opacity: 0;}
+  to {transform: translateY(0); opacity: 1;}
+}
